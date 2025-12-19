@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Konstantin\\Documents\\Bot\\Test_\u0420\u0430\u0431\u043E\u0447\u0438\u0439_\u0422\u0435\u0441\u0442\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1E7CB755-154A-45BD-4B30-C030123AA28B}|Test.csproj|c:\\users\\konstantin\\documents\\bot\\test_\u0440\u0430\u0431\u043E\u0447\u0438\u0439_\u0442\u0435\u0441\u0442\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1E7CB755-154A-45BD-4B30-C030123AA28B}|Test.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{1E7CB755-154A-45BD-4B30-C030123AA28B}|Test.csproj|c:\\users\\konstantin\\documents\\bot\\test_\u0440\u0430\u0431\u043E\u0447\u0438\u0439_\u0442\u0435\u0441\u0442\\data\\updateservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1E7CB755-154A-45BD-4B30-C030123AA28B}|Test.csproj|solutionrelative:data\\updateservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E7CB755-154A-45BD-4B30-C030123AA28B}|Test.csproj|c:\\users\\konstantin\\documents\\bot\\test_\u0440\u0430\u0431\u043E\u0447\u0438\u0439_\u0442\u0435\u0441\u0442\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E7CB755-154A-45BD-4B30-C030123AA28B}|Test.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1E7CB755-154A-45BD-4B30-C030123AA28B}|Test.csproj|C:\\Users\\Konstantin\\Documents\\Bot\\Test_\u0420\u0430\u0431\u043E\u0447\u0438\u0439_\u0422\u0435\u0441\u0442\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -22,11 +22,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Users\\Konstantin\\Documents\\Bot\\Test_\u0420\u0430\u0431\u043E\u0447\u0438\u0439_\u0422\u0435\u0441\u0442\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
@@ -56,15 +56,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "UpdateService.cs",
               "DocumentMoniker": "C:\\Users\\Konstantin\\Documents\\Bot\\Test_\u0420\u0430\u0431\u043E\u0447\u0438\u0439_\u0422\u0435\u0441\u0442\\Data\\UpdateService.cs",
               "RelativeDocumentMoniker": "Data\\UpdateService.cs",
               "ToolTip": "C:\\Users\\Konstantin\\Documents\\Bot\\Test_\u0420\u0430\u0431\u043E\u0447\u0438\u0439_\u0422\u0435\u0441\u0442\\Data\\UpdateService.cs",
               "RelativeToolTip": "Data\\UpdateService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAoAAAAAAAAAA==",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAYwCkAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-19T18:10:58.985Z"
+              "WhenOpened": "2025-12-19T18:10:58.985Z",
+              "EditorCaption": ""
             }
           ]
         }

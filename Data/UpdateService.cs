@@ -27,6 +27,7 @@ namespace Test.Services
                 using var client = new HttpClient();
                 client.DefaultRequestHeaders.Add("User-Agent", AppUserAgent);
                 client.Timeout = TimeSpan.FromSeconds(10);
+
                 string remoteContent = await client.GetStringAsync(VersionUrl);
                 if (string.IsNullOrWhiteSpace(remoteContent))
                 {
@@ -36,10 +37,26 @@ namespace Test.Services
 
                 if (!Version.TryParse(remoteContent.Trim(), out Version? remoteVersion))
                 {
-                    _logger.Log($"⚠️ Не удалось распознать формат версии: {remoteContent}");
+                    _logger.Log($"⚠️ Не удалось распознать формат версии на сервере: {remoteContent}");
                     return;
                 }
-                Version localVersion = Assembly.GetExecutingAssembly().GetName().Version ?? new Version(1, 0, 0);
+                Version localVersion;
+                if (System.IO.File.Exists("version.txt"))
+                {
+                    string localContent = await System.IO.File.ReadAllTextAsync("version.txt");
+                    if (Version.TryParse(localContent.Trim(), out var parsedLocal))
+                    {
+                        localVersion = parsedLocal;
+                    }
+                    else
+                    {
+                        localVersion = new Version(1, 0, 0); 
+                    }
+                }
+                else
+                {
+                    localVersion = Assembly.GetExecutingAssembly().GetName().Version ?? new Version(1, 0, 0);
+                }
                 if (remoteVersion > localVersion)
                 {
                     NotifyUpdateAvailable(localVersion, remoteVersion);
