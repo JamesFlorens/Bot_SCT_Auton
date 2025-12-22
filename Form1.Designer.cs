@@ -144,7 +144,8 @@
             textBoxApiKey.PlaceholderText = "Вставьте API токен сюда";
             textBoxApiKey.Size = new Size(193, 22);
             textBoxApiKey.TabIndex = 7;
-            textBoxApiKey.Text = "8485314782:AAGSrJ6HZcdKOFPDfg8BXrpUmIkmbBj9qKo";
+            textBoxApiKey.Text = "7514246560:AAHqFsHTFOt0fkk7eQTCVuFzlJRaDYgkFso";
+            textBoxApiKey.TextChanged += textBoxApiKey_TextChanged;
             // 
             // groupBox1
             // 

@@ -11,6 +11,7 @@ using System.Windows.Forms;
 using System.Reflection; 
 using Test.Data;
 using Test.Infrastructure;
+using Test.Postgres;
 
 namespace Test
 {
@@ -28,6 +29,7 @@ namespace Test
         {
             InitializeComponent();
             _logger = new Logger(listBox1);
+            Test.Postgres.DatabaseInitializer.EnsureTablesCreated(_logger);
             _downloadService = new ExcelFileProvider(_logger);
             _monitor = new ScheduleMonitor(_downloadService, _logger);
             _monitor.OnScheduleUpdated += (path) =>
@@ -145,5 +147,10 @@ namespace Test
             StartBot();
         }
         #endregion
+
+        private void textBoxApiKey_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
